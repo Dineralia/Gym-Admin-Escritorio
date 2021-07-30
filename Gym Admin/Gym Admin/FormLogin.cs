@@ -77,12 +77,22 @@ namespace Gym_Admin
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+           
+            FormPrincipal _formPrincipal = new FormPrincipal();
+            _formPrincipal.Show();
+            this.Hide();
+          
+
         }
     }
 }
